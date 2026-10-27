@@ -95,15 +95,27 @@
             </h3>
             
             <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
-                <!-- 開発者の写真 -->
-                <img src="kurikoma_smile.JPG" alt="開発者の栗駒豪先生" class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 rounded-full md:rounded-lg object-cover border-4 border-white shadow-md" onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Photo'">
+                <!-- 開発者の写真（見切れ防止・縦横比維持の修正） -->
+                <img src="Kurikoma_smile.JPG" alt="開発者の栗駒豪先生" class="w-40 md:w-48 h-auto flex-shrink-0 rounded-lg object-contain border-4 border-white shadow-md bg-white" onerror="this.src='https://placehold.co/400x400/e2e8f0/64748b?text=Photo'">
 
-                <div class="flex-1 space-y-4 text-gray-700 leading-relaxed">
-                    <p>この度は、システム導入のご決断ありがとうございます。開発者の栗駒です。</p>
-                    <p>私たち治療家にとって、「痛みが取れたからもういいや」と自己判断で離脱されてしまうことほど、悔しいことはありません。</p>
-                    <p>しかし、今日からその悩みを、この「Web新聞」が先生に代わって解決します。<br>プロが書いた医療コラムが第三者の声として届くことで、患者さん自身が「なぜ通い続ける必要があるのか」に気づいてくれるようになります。</p>
-                    <p class="font-bold text-blue-900">「先生、この記事読みましたよ！」</p>
-                    <p>そんな嬉しい会話が現場で生まれる日を、ぜひ楽しみにお待ちください。私たちが全力でサポートいたします！</p>
+                <!-- 文章（単語の途中での不自然な改行を防ぐためのブロック化） -->
+                <div class="flex-1 space-y-4 text-gray-700 leading-relaxed text-left text-base md:text-lg">
+                    <p>
+                        <span class="inline-block">この度は、システム導入の</span><span class="inline-block">ご決断ありがとうございます。</span><span class="inline-block">開発者の栗駒です。</span>
+                    </p>
+                    <p>
+                        <span class="inline-block">私たち治療家にとって、</span><span class="inline-block">「痛みが取れたからもういいや」と</span><span class="inline-block">自己判断で離脱されてしまうことほど、</span><span class="inline-block">悔しいことはありません。</span>
+                    </p>
+                    <p>
+                        <span class="inline-block">しかし、今日からその悩みを、</span><span class="inline-block">この「Web新聞」が</span><span class="inline-block">先生に代わって解決します。</span><br>
+                        <span class="inline-block">プロが書いた医療コラムが</span><span class="inline-block">第三者の声として届くことで、</span><span class="inline-block">患者さん自身が</span><span class="inline-block">「なぜ通い続ける必要があるのか」に</span><span class="inline-block">気づいてくれるようになります。</span>
+                    </p>
+                    <p class="font-bold text-blue-900 text-lg md:text-xl">
+                        「先生、この記事読みましたよ！」
+                    </p>
+                    <p>
+                        <span class="inline-block">そんな嬉しい会話が現場で生まれる日を、</span><span class="inline-block">ぜひ楽しみにお待ちください。</span><span class="inline-block">私たちが全力でサポートいたします！</span>
+                    </p>
                 </div>
             </div>
         </section>
